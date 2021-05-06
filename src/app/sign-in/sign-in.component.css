@@ -1,0 +1,64 @@
+.formGroupContainer, .boxShadow {
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid white;
+    margin-top: 1em;
+    background-color: rgb(10, 73, 73);
+}
+
+.innerContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+    grid-row-gap: 3em;
+}
+
+.login-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80vh;
+    align-items: center;
+}
+  
+.login-form {
+    padding: 35px;
+    background-color: lightsteelblue;
+}
+
+.box-shadow {
+    display: block;
+    -webkit-box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 8px 35px -10px rgba(0, 0, 0, 0.75);
+}
+
+.font {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+/* .example-small-box, .example-large-box {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 26px;
+    padding: 26px;
+    border-radius: 8px;
+}
+  
+.example-small-box {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+  
+.example-large-box {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+
+.mat-tab-label-content {
+    color: black;
+} */

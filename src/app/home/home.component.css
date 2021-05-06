@@ -1,0 +1,129 @@
+.picTemp {
+    height: 150px;
+    width: 150px;
+}
+
+.mainHome {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    text-align: center;
+    grid-row-gap: 3em;
+    margin: 20px 0px;
+}
+
+/* what I (Jesus) added from lab 5,6,7,8 and 9 */
+
+.functionButton {
+    margin: 10px;
+}
+
+.contact-grid {
+    display: grid;
+    margin: 20px auto;
+    width: 90%;
+    height: 80vh;
+    max-height: 80vh;
+    overflow: auto;
+  }
+  
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  
+  .nav-action-container>li>button {
+    margin-right: 9px;
+  }
+  
+  .search-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .cover {
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+  }
+/**maybe invs or inv**/
+  .inventorys-container {
+  display: grid;
+  grid-gap: 2em;
+  margin: 30px auto;
+  background-color: #ececec;
+
+}
+
+.inventory-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em 2em;
+  padding: 2em;
+}
+
+.inventory-card {
+  position: relative;
+  height: 215px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  color: #84878a;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+/* .grow:hover {
+  transform: scale(1);
+} */
+
+.boxShadow:hover {
+  -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.45);
+  
+}
+
+.box-shadow {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.btn-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list-cover-image {
+    height: 300px;
+    border-radius: 10px;
+    border-style: groove;
+  }
+
+  .toolbar {
+    background-color: #b0c4de;
+    border-radius: 10px;
+  }
+
+  .shopC {
+    background-color: #28a745;
+  }
+
+.title {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.item-card {
+  background-color: rgb(250, 250, 250);
+}

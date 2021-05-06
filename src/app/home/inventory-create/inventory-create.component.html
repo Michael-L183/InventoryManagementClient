@@ -1,0 +1,41 @@
+<mat-card class="input-container">
+  <mat-toolbar color="primary" class="create-toolbar">
+    <mat-toolbar-row>
+      <span class="copyright">Create a Inventory</span>
+      <div class="button-row">
+        <button [routerLink]="['']" mat-raised-button color="accent" class="pull-right">
+          Back to Inventory List
+          <mat-icon class="example-icon">arrow_back</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-card-content>
+    <div class="container">
+      <img *ngIf="inventory.image_url" mat-card-image [src]="inventory.image_url" alt="bike">
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.name" matInput placeholder="Name" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.model" matInput placeholder="Model" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.serial" matInput placeholder="Serial" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.price" type = "number" matInput placeholder="Price" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.image_url" matInput placeholder="Cover Image URL" required>
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="addInventory(inventory)" color="primary">Create Inventory</button>
+  </mat-card-actions>
+</mat-card>

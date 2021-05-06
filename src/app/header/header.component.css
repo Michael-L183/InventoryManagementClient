@@ -1,0 +1,47 @@
+.nav-container {
+    width: 80%;
+    margin: 0px auto;
+    grid-row-gap: 1em;
+    grid-template-rows: auto 1fr;
+}
+
+.top-nav {
+    background-color: lightsteelblue;
+    border-color: #080808;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1em;
+    margin: 0px 0px 10px;
+}
+
+.welcome-text {
+    color: black;
+    cursor: pointer;
+}
+
+.top-nav-items {
+    list-style-type: none;
+
+}
+
+.top-nav-items li {
+    display: inline;
+}
+
+.top-nav-items li a {
+    color: black;
+    padding: 8px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+.fontFamily {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+

@@ -1,0 +1,44 @@
+<!-- Search form -->
+<form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
+  <button type="button" class="btn btn-success btn-lg btn-block" (click)="checkout()"><i
+      class="far fa-money-bill-alt"></i> Check Out</button>
+</form>
+
+<!-- <div class="mainHome">
+    <app-home-cards *ngFor="let item of homeCard" [cardItem]="item"></app-home-cards>
+</div> -->
+
+<!-- inventorys from database list -->
+
+<div class="inventory-card-container">
+  <mat-card class="boxShadow item-card" *ngFor="let shoppingcart of shoppingcarts; let i = index">
+    <mat-toolbar color="warn" class="toolbar">
+      <mat-toolbar-row>
+        <mat-card-title>{{shoppingcart.name}}</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <img class="list-cover-image" mat-card-image [src]="shoppingcart.image_url" alt="inventory">
+    <mat-card-content>
+      <P>Author: {{shoppingcart.author}}</P>
+      <P>ISBN: {{shoppingcart.isbn}}</P>
+      <p>
+        <label for="quantity">Quantity</label>
+        <input [(ngModel)]="shoppingcart.quantity" type="number" min = "1" class="form-control" placeholder="Quantity" aria-label="qty"
+          aria-describedby="basic-addon1">
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="button" class="btn btn-success" (click)="AddToCart(inventory)" color="success">
+        Total = 
+        <i class="fas fa-dollar-sign"></i>
+        {{shoppingcart.price * shoppingcart.quantity}}
+      </button>
+      <div class="btn-group pull-right">
+        <button type="button" class="btn btn-danger" (click)="deletecartinventory(shoppingcart, i)">
+          <i class="far fa-trash-alt"></i>
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

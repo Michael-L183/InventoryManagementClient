@@ -1,3 +1,4 @@
+
 <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
   <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search inventors by name, model, etc.."
     aria-label="Search">
@@ -11,14 +12,19 @@
   <mat-card class="boxShadow item-card" *ngFor="let inventory of inventorys; let i = index">
     <mat-toolbar color="warn" class="toolbar">
       <mat-toolbar-row>
-        <mat-card-title class="title">{{inventory.name}}</mat-card-title>
+        <mat-card-title class="title">{{inventory.hardwareName}}</mat-card-title>
         <mat-card-subtitle></mat-card-subtitle>
       </mat-toolbar-row>
     </mat-toolbar>
     <img class="list-cover-image" mat-card-image [src]="inventory.image_url" alt="inventory">
     <mat-card-content>
-      <P>model: {{inventory.model}}</P>
-      <P>serial: {{inventory.serial}}</P>
+      <P>hardwareName: {{inventory.hardwareInfo}}</P>
+      <P>hardwareInfo: {{inventory.hardwareInfo}}</P>
+      <P>hardwareModel: {{inventory.modelPurchased}}</P>
+      <P>serialNumber: {{inventory.serialNumber}}</P>
+      <P>serialNumber: {{inventory.datePurchased}}</P>
+      <P>serialNumber: {{inventory.price}}</P>
+      <P>serialNumber: {{inventory.quantity}}</P>
     </mat-card-content>
     <mat-card-actions>
       <button type="button" class="btn btn-success" (click)="AddToCart(inventory)" color="success">
@@ -37,3 +43,5 @@
     </mat-card-actions>
   </mat-card>
 </div>
+
+<app-home-cards></app-home-cards>

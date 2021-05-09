@@ -5,12 +5,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 interface IHome {
   id?: number;
-  inventoryImage: string;
-  inventoryName: string;
-  inventoryAuthor: string;
-  inventoryType: string;
-  inventoryPrice: string;
-  inventoryQuantity: string;
+  inventoryHardwareName: string;
+  inventoryHardwareInfo: string;
+  inventoryModelPurchased: string;
+  inventorySerialNumber: number;
+  inventoryDatePurchase: string;
+  inventoryPrice: number;
+  inventoryQuantity: number;
 }
 
 @Component({
@@ -53,10 +54,13 @@ export class HomeComponent implements OnInit {
 
   async createInventory() {
     const inventory = {
-      name: null,
-      model: null,
-      serial: null,
-      price: null
+      hardwareName: null,
+      hardwareInfo: null,
+      modelPurchased: null,
+      serialNumber: null,
+      datePurchased: null,
+      price: null,
+      quantity: null
     };
     const resp = await this.http.post('inventory', inventory);
     if (resp) {

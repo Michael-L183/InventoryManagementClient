@@ -30,7 +30,7 @@ export class UserCreateComponent implements OnInit {
   async addUser(user: object) {
     const resp = await this.createUser(user);
     if (resp) {
-      this.router.navigate(['users']);
+      this.router.navigate(['/users']);
     }
   }
 }

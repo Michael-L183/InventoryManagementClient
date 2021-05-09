@@ -27,6 +27,7 @@ import { UserComponent } from './user/user.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
+
 const appRoutes: Routes = [
 ];
 

@@ -15,15 +15,23 @@
     <div class="container">
       <img *ngIf="inventory.image_url" mat-card-image [src]="inventory.image_url" alt="bike">
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.name" matInput placeholder="Name" required>
+        <input [(ngModel)]="inventory.hardwareName" matInput placeholder="Hardware" required>
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.model" matInput placeholder="Model" required>
+        <input [(ngModel)]="inventory.hardwareInfo" matInput placeholder="Hardware Size, Ram & CPU Capacity" required>
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.serial" matInput placeholder="Serial" required>
+        <input [(ngModel)]="inventory.modelPurchased" matInput placeholder="Model Purchased" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.serialNumber" type = "number" matInput placeholder="Serial Number" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.datePurchased" matInput placeholder="Date Purchased (MM-DD-YYYY)" required>
       </mat-form-field>
 
       <mat-form-field class="input">
@@ -31,7 +39,11 @@
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.image_url" matInput placeholder="Cover Image URL" required>
+        <input type = "number" [(ngModel)]="inventory.quantity" matInput placeholder="Quantity" required>
+      </mat-form-field>
+
+      <mat-form-field class="input">
+        <input [(ngModel)]="inventory.image_url" matInput placeholder="Image URL" required>
       </mat-form-field>
     </div>
   </mat-card-content>

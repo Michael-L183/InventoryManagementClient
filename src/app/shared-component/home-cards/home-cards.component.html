@@ -1,7 +1,8 @@
+
 <div class="pull-left bordered cardTemp grow">
-    <img class="picTemp" [src]="cardItem.inventoryImage" [alt]="cardItem.inventoryName">
-    <h2 class="inventoryTitle">{{cardItem.inventoryName}}</h2>
-    <h2 class="inventoryAuthor"><i>{{cardItem.inventoryModel}}</i></h2>
-    <h2 class="inventoryType">{{cardItem.inventorySerial}}</h2>
+    <img class="picTemp" [src]="cardItem.inventoryImage" [alt]="cardItem.inventoryHardwareName">
+    <h2 class="inventoryHardwareName">{{cardItem.inventoryHardwareName}}</h2>
+    <h2 class="inventoryHardwareInfo"><i>{{cardItem.inventoryHardwareInfo}}</i></h2>
+    <h2 class="inventorySerialNumber">{{cardItem.inventorySerialNumber}}</h2>
     <button mat-flat-button color="warn">Add to Cart</button>
 </div>

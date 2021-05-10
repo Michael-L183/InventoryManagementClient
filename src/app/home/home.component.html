@@ -1,6 +1,6 @@
 
 <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
-  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search inventors by name, model, etc.."
+  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search inventories by name, model, etc.."
     aria-label="Search">
   <button class="fontFamily btn btn-info" type="button" color="info" type="search"> <i class="fas fa-search"></i>
   </button>
@@ -18,20 +18,15 @@
     </mat-toolbar>
     <img class="list-cover-image" mat-card-image [src]="inventory.image_url" alt="inventory">
     <mat-card-content>
-      <P>hardwareName: {{inventory.hardwareInfo}}</P>
-      <P>hardwareInfo: {{inventory.hardwareInfo}}</P>
-      <P>hardwareModel: {{inventory.modelPurchased}}</P>
-      <P>serialNumber: {{inventory.serialNumber}}</P>
-      <P>serialNumber: {{inventory.datePurchased}}</P>
-      <P>serialNumber: {{inventory.price}}</P>
-      <P>serialNumber: {{inventory.quantity}}</P>
+      <P>Hardware Name: {{inventory.hardwareInfo}}</P>
+      <P>Hardware Info: {{inventory.hardwareInfo}}</P>
+      <P>Hardware Model: {{inventory.modelPurchased}}</P>
+      <P>Serial Number: {{inventory.serialNumber}}</P>
+      <P>Date of purchase: {{inventory.datePurchased}}</P>
+      <P>Price: {{inventory.price}}</P>
+      <P>Quantity: {{inventory.quantity}}</P>
     </mat-card-content>
     <mat-card-actions>
-      <button type="button" class="btn btn-success" (click)="AddToCart(inventory)" color="success">
-        <i class="fas fa-dollar-sign"></i>
-        {{inventory.price}}
-        <i class="fas fa-shopping-cart"></i>
-      </button>
       <div class="btn-group pull-right">
         <button type="button" class="btn btn-secondary" [routerLink]="['/inventory-edit', inventory.id]">
           <mat-icon class="example-icon">edit</mat-icon>
@@ -43,5 +38,3 @@
     </mat-card-actions>
   </mat-card>
 </div>
-
-<app-home-cards></app-home-cards>

@@ -3,7 +3,7 @@
     <mat-toolbar-row>
       <span class="copyright">Create a Inventory</span>
       <div class="button-row">
-        <button [routerLink]="['']" mat-raised-button color="accent" class="pull-right">
+        <button [routerLink]="['']" mat-raised-button class="pull-right btn-secondary">
           Back to Inventory List
           <mat-icon class="example-icon">arrow_back</mat-icon>
         </button>
@@ -27,7 +27,7 @@
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.serialNumber" type = "number" matInput placeholder="Serial Number" required>
+        <input [(ngModel)]="inventory.serialNumber" matInput placeholder="Serial Number" required>
       </mat-form-field>
 
       <mat-form-field class="input">
@@ -35,11 +35,11 @@
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input [(ngModel)]="inventory.price" type = "number" matInput placeholder="Price" required>
+        <input [(ngModel)]="inventory.price" matInput placeholder="Price" required>
       </mat-form-field>
 
       <mat-form-field class="input">
-        <input type = "number" [(ngModel)]="inventory.quantity" matInput placeholder="Quantity" required>
+        <input [(ngModel)]="inventory.quantity" matInput placeholder="Quantity" required>
       </mat-form-field>
 
       <mat-form-field class="input">
@@ -47,7 +47,7 @@
       </mat-form-field>
     </div>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="addInventory(inventory)" color="primary">Create Inventory</button>
+  <mat-card-actions class="addBtn">
+    <button mat-raised-button (click)="addInventory(inventory)" class="addBtn btn btn-success">Create Inventory</button>
   </mat-card-actions>
 </mat-card>

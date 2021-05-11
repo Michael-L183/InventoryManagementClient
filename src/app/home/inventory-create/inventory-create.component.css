@@ -6,10 +6,16 @@
     display: grid;
     -ms-grid-columns: 1fr;
     -ms-grid-rows: 1fr;
-    margin: 140px auto;
-    width: 70%;
+    margin: 25px auto;
+    width: 79%;
   }
   .create-toolbar {
-    margin: -15px -15px 40px -15px !important;
+    margin: -12px -13px 33px -12px !important;
     width: calc(100% + 30px);
+    font-family: Girassol, Times;
   }
+  .addBtn{
+    display: grid;
+    font-family: Girassol, Times;
+  }
+  

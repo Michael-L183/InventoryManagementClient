@@ -2,23 +2,23 @@
 <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
   <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search inventories by name, model, etc.."
     aria-label="Search">
-  <button class="fontFamily btn btn-info" type="button" color="info" type="search"> <i class="fas fa-search"></i>
+  <button class="nwfont btn btn-light" type="button" color="info" type="search"> <i class="fas fa-search"></i>
   </button>
-  <button class="functionButton btn btn-primary" type="button" color="primary" (click)="goToCreate()">Add Inventory</button>
+  <button class="functionButton nwfont btn btn-success" type="button" color="primary" (click)="goToCreate()">Add Inventory</button>
 </form>
 
 
 <div class="inventory-card-container">
   <mat-card class="boxShadow item-card" *ngFor="let inventory of inventorys; let i = index">
     <mat-toolbar color="warn" class="toolbar">
-      <mat-toolbar-row>
+      <mat-toolbar-row class="nwfont">
         <mat-card-title class="title">{{inventory.hardwareName}}</mat-card-title>
         <mat-card-subtitle></mat-card-subtitle>
       </mat-toolbar-row>
     </mat-toolbar>
     <img class="list-cover-image" mat-card-image [src]="inventory.image_url" alt="inventory">
-    <mat-card-content>
-      <P>Hardware Name: {{inventory.hardwareInfo}}</P>
+    <mat-card-content class="nwfont">
+      <P>Hardware Name: {{inventory.hardwareName}}</P>
       <P>Hardware Info: {{inventory.hardwareInfo}}</P>
       <P>Hardware Model: {{inventory.modelPurchased}}</P>
       <P>Serial Number: {{inventory.serialNumber}}</P>
@@ -28,7 +28,7 @@
     </mat-card-content>
     <mat-card-actions>
       <div class="btn-group pull-right">
-        <button type="button" class="btn btn-secondary" [routerLink]="['/inventory-edit', inventory.id]">
+        <button type="button" class="btn btn-warning" [routerLink]="['/inventory-edit', inventory.id]">
           <mat-icon class="example-icon">edit</mat-icon>
         </button>
         <button type="button" class="btn btn-danger" (click)="removeInventory(inventory, i)">

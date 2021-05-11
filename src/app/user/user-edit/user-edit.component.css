@@ -23,3 +23,9 @@
     width: calc(100% + 30px);
   }
   
+  .updateBtn{
+    display: grid;
+  }
+  .create-toolbar{
+    background-color: rgb(226, 210, 62);
+  }

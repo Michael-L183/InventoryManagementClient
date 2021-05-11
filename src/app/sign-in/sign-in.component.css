@@ -37,28 +37,3 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
 }
-
-/* .example-small-box, .example-large-box {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 26px;
-    padding: 26px;
-    border-radius: 8px;
-}
-  
-.example-small-box {
-    height: 300px;
-    width: 300px;
-    background-color: white;
-}
-  
-.example-large-box {
-    height: 400px;
-    width: 400px;
-    background-color: white;
-}
-
-.mat-tab-label-content {
-    color: black;
-} */

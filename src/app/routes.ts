@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
+
 import { InventoryCreateComponent } from './home/inventory-create/inventory-create.component';
 import { InventoryEditComponent } from './home/inventory-edit/inventory-edit.component';
 import { UserComponent } from './user/user.component';
@@ -23,14 +23,6 @@ const routes: Routes = [
         resolve: {},
         data: {
             name: 'signIn'
-        }
-    },
-    {
-        path: 'shoppingcart',
-        component: ShoppingcartComponent,
-        resolve: {},
-        data: {
-            name: 'shoppingcart'
         }
     },
     {

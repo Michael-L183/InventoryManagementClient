@@ -1,9 +1,9 @@
 <mat-card class="input-container">
   <mat-toolbar color="primary" class="create-toolbar">
     <mat-toolbar-row>
-      <span class="copyright">Create a User</span>
+      <span class="nwfont">Create a User</span>
       <div class="button-row">
-        <button [routerLink]="'../users'" mat-raised-button color="accent" class="pull-right">
+        <button [routerLink]="'../users'" mat-raised-button class="pull-right btn-secondary nwfont">
           Back to User List
           <mat-icon class="example-icon">arrow_back</mat-icon>
         </button>
@@ -27,6 +27,6 @@
     </div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button (click)="addUser(user)" color="primary">Create User</button>
+    <button mat-raised-button (click)="addUser(user)" class="btn btn-success nwfont">Create User</button>
   </mat-card-actions>
 </mat-card>

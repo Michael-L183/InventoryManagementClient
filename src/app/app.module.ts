@@ -20,7 +20,6 @@ import { SharedServiceModule } from '../shared-service/shared-service.module';
 import { FormsModule } from '@angular/forms';
 import { MaterialDesignModule } from '../material-design/material-design.module';
 import { ToastModule } from './toast/toast.module';
-import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { InventoryCreateComponent } from './home/inventory-create/inventory-create.component';
 import { InventoryEditComponent } from './home/inventory-edit/inventory-edit.component';
 import { UserComponent } from './user/user.component';
@@ -38,7 +37,6 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     SignInComponent,
-    ShoppingcartComponent,
     InventoryCreateComponent,
     InventoryEditComponent,
     UserComponent,

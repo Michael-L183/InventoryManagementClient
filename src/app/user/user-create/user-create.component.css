@@ -13,3 +13,6 @@
     margin: -15px -15px 40px -15px !important;
     width: calc(100% + 30px);
   }
+  .nwfont{
+    font-family: Girassol, Times;
+  }

@@ -1,9 +1,9 @@
 <mat-card *ngIf="inventory" class="input-container">
   <mat-toolbar color="primary" class="create-toolbar">
     <mat-toolbar-row>
-      <span class="copyright">Update an Inventory</span>
+      <span class="nwfont">Update an Inventory</span>
       <div class="button-row">
-        <button [routerLink]="['']" mat-raised-button color="accent" class="pull-right">
+        <button [routerLink]="['']" mat-raised-button class="pull-right nwfont btn btn-secondary">
           Back to Inventory List
           <mat-icon class="example-icon">arrow_back</mat-icon>
         </button>
@@ -48,8 +48,8 @@
       </mat-form-field>
     </div>
   </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button (click)="updateInventory(inventory)" color="primary">Update Inventory</button>
+  <mat-card-actions class="updateBtn">
+    <button mat-raised-button (click)="updateInventory(inventory)" class="nwfont btn btn-success">Update Inventory</button>
   </mat-card-actions>
 </mat-card>
 
